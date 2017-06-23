@@ -6,10 +6,16 @@ import HelloWorld from './HelloWorld';
 import Shape from './Shape';
 import OrangeRectangle from './OrangeRectangle';
 import Greetings from './Greetings';
+import GuestBook from './GuestBook';
+
+const entries = [
+  {name: 'Jon Snow', body: 'Winter has come.', date: new Date()}
+];
 
 function App (props) {
   return (
     <div className='app' style={style}>
+      <GuestBook entries={entries} />
       <HelloWorld name='Daenerys' />
       <HelloWorld name='Duncan McLeod' />
       <HelloWorld name='Rick' />
