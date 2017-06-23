@@ -8,6 +8,7 @@ import OrangeRectangle from './OrangeRectangle';
 import Greetings from './Greetings';
 import GuestBook from './GuestBook';
 import Search from './Search';
+import Timer from './Timer';
 
 const entries = [
   {name: 'Jon Snow', body: 'Winter has come.', date: new Date()}
@@ -16,6 +17,7 @@ const entries = [
 function App (props) {
   return (
     <div className='app' style={style}>
+      <Timer />
       <Search values={['Chris', 'Carlo', 'Inge', 'Celina']} />
       <GuestBook entries={entries} />
       <HelloWorld name='Daenerys' />
