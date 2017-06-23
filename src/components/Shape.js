@@ -8,10 +8,10 @@ function Shape (props) {
   };
   
   style.backgroundColor = props.color || 'blue';
-  if (props.type == 'circle') {
+  if (props.type === 'circle') {
     style.borderRadius = '999999px';
   }
-  if (props.type == 'diamond') {
+  if (props.type === 'diamond') {
     style.transform = 'rotateZ(45deg) scale(0.8)';
   }
 
